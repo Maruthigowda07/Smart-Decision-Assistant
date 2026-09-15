@@ -1,285 +1,216 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
+```
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Career Decision - Smart Decision Assistant</title>
+<title>Career Decision - Smart Decision Assistant</title>
 
-    <link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="../CSS/style.css">
+```
 
 </head>
 
-
 <body>
 
+```
+<!-- Header -->
 
-    <!-- Header -->
+<header>
 
-    <header>
+    <div class="logo">
 
-        <div class="logo">
+        <h1>Smart Decision Assistant</h1>
 
-            <h1>
-                Smart Decision Assistant
-            </h1>
+        <p>Find the right career for your skills</p>
 
-            <p>
-                Find the right career for your skills
-            </p>
+    </div>
 
-        </div>
 
+    <div class="assistant">
 
-        <div class="assistant">
+        <button>Smart Assistant</button>
 
-            <button>
-                Smart Assistant
-            </button>
+    </div>
 
-        </div>
+</header>
 
-    </header>
 
+<!-- Main Content -->
 
+<main>
 
-    <!-- Main Content -->
+    <section class="laptop-section">
 
-    <main>
-
-        <section class="laptop-section">
-
-
-            <h2>
-                Find Your Perfect Career
-            </h2>
-
-
-            <p>
-                Enter your requirements and get a suitable
-                career recommendation.
-            </p>
-
-
-
-            <!-- Career Form -->
-
-            <div class="laptop-form">
-
-
-                <!-- Demand -->
-
-                <label for="demand">
-                    Minimum Demand Level
-                </label>
-
-
-                <select id="demand">
-
-                    <option value="">
-                        Select Demand
-                    </option>
-
-                    <option value="6">
-                        Basic
-                    </option>
-
-                    <option value="7">
-                        Good
-                    </option>
-
-                    <option value="8">
-                        High
-                    </option>
-
-                    <option value="9">
-                        Very High
-                    </option>
-
-                    <option value="10">
-                        Excellent
-                    </option>
-
-                </select>
-
-
-
-                <!-- Difficulty -->
-
-                <label for="difficulty">
-                    Maximum Difficulty Level
-                </label>
-
-
-                <select id="difficulty">
-
-                    <option value="">
-                        Select Difficulty
-                    </option>
-
-                    <option value="5">
-                        Very Easy
-                    </option>
-
-                    <option value="6">
-                        Easy
-                    </option>
-
-                    <option value="7">
-                        Medium
-                    </option>
-
-                    <option value="8">
-                        Hard
-                    </option>
-
-                    <option value="9">
-                        Very Hard
-                    </option>
-
-                </select>
-
-
-
-                <!-- Recommendation Button -->
-
-                <button class="recommend-btn">
-
-                    Get Recommendation
-
-                </button>
-
-
-            </div>
-
-
-
-            <!-- Recommendation Result -->
-
-            <div class="result">
-
-
-                <h2>
-                    Recommendation
-                </h2>
-
-
-                <div class="result-details">
-
-
-                    <p>
-
-                        <strong>
-                            Career:
-                        </strong>
-
-                        Your recommended career will appear here.
-
-                    </p>
-
-
-
-                    <p>
-
-                        <strong>
-                            Main Skill:
-                        </strong>
-
-                        --
-
-                    </p>
-
-
-
-                    <p>
-
-                        <strong>
-                            Salary:
-                        </strong>
-
-                        --
-
-                    </p>
-
-
-
-                    <p>
-
-                        <strong>
-                            Demand:
-                        </strong>
-
-                        --
-
-                    </p>
-
-
-
-                    <p>
-
-                        <strong>
-                            Difficulty:
-                        </strong>
-
-                        --
-
-                    </p>
-
-
-
-                    <p>
-
-                        <strong>
-                            Score:
-                        </strong>
-
-                        --
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- Back to Home -->
-
-            <div class="back-home">
-
-                <a href="../index.html">
-
-                    <button>
-                        Back to Home
-                    </button>
-
-                </a>
-
-            </div>
-
-
-        </section>
-
-    </main>
-
-
-
-    <!-- Footer -->
-
-    <footer>
+        <h2>Find Your Perfect Career</h2>
 
         <p>
-            &copy; 2026 Smart Decision Assistant
+            Enter your requirements and get a suitable
+            career recommendation.
         </p>
 
-    </footer>
 
+        <!-- Career Form -->
+
+        <div class="laptop-form">
+
+            <!-- Demand -->
+
+            <label for="demand">
+                Minimum Demand Level
+            </label>
+
+            <select id="demand">
+
+                <option value="">
+                    Select Demand
+                </option>
+
+                <option value="6">
+                    Basic
+                </option>
+
+                <option value="7">
+                    Good
+                </option>
+
+                <option value="8">
+                    High
+                </option>
+
+                <option value="9">
+                    Very High
+                </option>
+
+                <option value="10">
+                    Excellent
+                </option>
+
+            </select>
+
+
+            <!-- Difficulty -->
+
+            <label for="difficulty">
+                Maximum Difficulty Level
+            </label>
+
+            <select id="difficulty">
+
+                <option value="">
+                    Select Difficulty
+                </option>
+
+                <option value="5">
+                    Very Easy
+                </option>
+
+                <option value="6">
+                    Easy
+                </option>
+
+                <option value="7">
+                    Medium
+                </option>
+
+                <option value="8">
+                    Hard
+                </option>
+
+                <option value="9">
+                    Very Hard
+                </option>
+
+            </select>
+
+
+            <!-- Recommendation Button -->
+
+            <button class="recommend-btn">
+                Get Recommendation
+            </button>
+
+
+        </div>
+
+
+        <!-- Recommendation Result -->
+
+        <div class="result">
+
+            <h2>Recommendation</h2>
+
+            <div class="result-details">
+
+                <p>
+                    <strong>Career:</strong>
+                    Your recommended career will appear here.
+                </p>
+
+                <p>
+                    <strong>Main Skill:</strong>
+                    --
+                </p>
+
+                <p>
+                    <strong>Salary:</strong>
+                    --
+                </p>
+
+                <p>
+                    <strong>Demand:</strong>
+                    --
+                </p>
+
+                <p>
+                    <strong>Difficulty:</strong>
+                    --
+                </p>
+
+                <p>
+                    <strong>Score:</strong>
+                    --
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Back to Home -->
+
+        <div class="back-home">
+
+            <a href="https://maruthigowda07.github.io/Smart-Decision-Assistant/">
+
+                <button type="button">
+                    Back to Home
+                </button>
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Smart Decision Assistant
+    </p>
+
+</footer>
 
 </body>
 
