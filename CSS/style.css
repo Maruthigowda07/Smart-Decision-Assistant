@@ -1,0 +1,501 @@
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 60px;
+
+    background-color: #1f2937;
+    color: white;
+}
+
+
+/* ============================= */
+/* LOGO */
+/* ============================= */
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.logo p {
+    margin: 7px 0 0;
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* ASSISTANT BUTTON */
+/* ============================= */
+
+.assistant button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #1f2937;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.assistant button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/* MAIN */
+/* ============================= */
+
+main {
+    padding: 60px;
+}
+
+
+/* ============================= */
+/* WELCOME */
+/* ============================= */
+
+.welcome {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* ============================= */
+/* SEARCH BOX */
+/* ============================= */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 28px;
+}
+
+.search-box input {
+    width: 450px;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px 0 0 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #1f2937;
+}
+
+.search-box button {
+    padding: 14px 24px;
+
+    border: none;
+    border-radius: 0 8px 8px 0;
+
+    background-color: #1f2937;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #374151;
+}
+
+
+/* ============================= */
+/* CATEGORY SECTION */
+/* ============================= */
+
+.categories {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.card {
+    width: 220px;
+
+    padding: 28px;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ============================= */
+/* CARD HEADING */
+/* ============================= */
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+
+/* ============================= */
+/* CARD TEXT */
+/* ============================= */
+
+.card p {
+    color: #666;
+
+    line-height: 1.6;
+
+    min-height: 70px;
+}
+
+
+/* ============================= */
+/* EXPLORE BUTTON */
+/* ============================= */
+
+.card button {
+    margin-top: 15px;
+
+    padding: 11px 22px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #1f2937;
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #374151;
+
+    transform: scale(1.05);
+}
+
+
+/* ============================= */
+/* DECISION PAGE */
+/* ============================= */
+
+.laptop-section {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.laptop-section h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.laptop-section > p {
+    color: #666;
+
+    font-size: 16px;
+}
+
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.laptop-form {
+    width: 500px;
+
+    max-width: 100%;
+
+    margin: 35px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* LABEL */
+/* ============================= */
+
+.laptop-form label {
+    display: block;
+
+    margin-top: 16px;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+/* ============================= */
+/* INPUT + SELECT */
+/* ============================= */
+
+.laptop-form input,
+.laptop-form select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+.laptop-form input:focus,
+.laptop-form select:focus {
+    border-color: #1f2937;
+}
+
+
+/* ============================= */
+/* RECOMMEND BUTTON */
+/* ============================= */
+
+.recommend-btn {
+    width: 100%;
+
+    margin-top: 27px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #1f2937;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.recommend-btn:hover {
+    background-color: #374151;
+
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/* RESULT */
+/* ============================= */
+
+.result {
+    width: 500px;
+
+    max-width: 100%;
+
+    margin: 35px auto;
+
+    padding: 28px;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    box-sizing: border-box;
+}
+
+.result h2 {
+    margin-top: 0;
+
+    text-align: center;
+}
+
+
+/* ============================= */
+/* RESULT DETAILS */
+/* ============================= */
+
+.result-details {
+    margin-top: 20px;
+}
+
+.result-details p {
+    padding: 10px;
+
+    margin: 5px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+/* ============================= */
+/* BACK HOME */
+/* ============================= */
+
+.back-home {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.back-home button {
+    padding: 11px 22px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #1f2937;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.back-home button:hover {
+    background-color: #374151;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    text-align: center;
+
+    padding: 22px;
+
+    margin-top: 40px;
+
+    background-color: #1f2937;
+
+    color: white;
+}
+
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .welcome h2 {
+        font-size: 26px;
+    }
+
+    .search-box input {
+        width: 60%;
+    }
+
+    .card {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .laptop-form,
+    .result {
+        width: 100%;
+    }
+}
