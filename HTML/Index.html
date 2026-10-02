@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Decision Assistant</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>
+                Smart Decision Assistant
+            </h1>
+
+            <p>
+                Make better decisions with simple choices
+            </p>
+
+        </div>
+
+
+        <div class="assistant">
+
+            <button type="button" id="assistantButton">
+                Smart Assistant
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ============================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================= -->
+
+    <main>
+
+
+        <!-- ============================= -->
+        <!-- WELCOME SECTION -->
+        <!-- ============================= -->
+
+        <section class="welcome">
+
+            <h2>
+                What do you need help with?
+            </h2>
+
+
+            <p>
+                Search for what you need or choose a category
+                to get a smart recommendation.
+            </p>
+
+
+
+            <!-- ============================= -->
+            <!-- SEARCH BOX -->
+            <!-- ============================= -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Tell me what you need..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    type="button"
+                    id="searchButton"
+                >
+                    Search
+                </button>
+
+            </div>
+
+
+            <p id="searchHint">
+
+                Try:
+                laptop,
+                mobile,
+                career,
+                travel
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- SEARCH RESULT MESSAGE -->
+        <!-- ============================= -->
+
+        <div
+            id="searchResult"
+            class="search-message"
+            style="display: none;"
+        ></div>
+
+
+
+        <!-- ============================= -->
+        <!-- DECISION CATEGORIES -->
+        <!-- ============================= -->
+
+        <section class="categories">
+
+
+            <!-- LAPTOP -->
+
+            <div class="card">
+
+                <h3>
+                    Laptop
+                </h3>
+
+
+                <p>
+                    Find the right laptop based on your
+                    budget, RAM and performance requirements.
+                </p>
+
+
+                <a href="laptop.html">
+
+                    <button type="button">
+                        Explore
+                    </button>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- MOBILE -->
+
+            <div class="card">
+
+                <h3>
+                    Mobile
+                </h3>
+
+
+                <p>
+                    Choose a mobile based on your budget,
+                    camera, battery and performance.
+                </p>
+
+
+                <a href="mobile.html">
+
+                    <button type="button">
+                        Explore
+                    </button>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- CAREER -->
+
+            <div class="card">
+
+                <h3>
+                    Career
+                </h3>
+
+
+                <p>
+                    Find a suitable career path based on
+                    demand and difficulty requirements.
+                </p>
+
+
+                <a href="career.html">
+
+                    <button type="button">
+                        Explore
+                    </button>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- TRAVEL -->
+
+            <div class="card">
+
+                <h3>
+                    Travel
+                </h3>
+
+
+                <p>
+                    Find a destination based on your
+                    budget, adventure and relaxation needs.
+                </p>
+
+
+                <a href="travel.html">
+
+                    <button type="button">
+                        Explore
+                    </button>
+
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Smart Decision Assistant
+        </p>
+
+    </footer>
+
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script src="../JS/script.js"></script>
+
+
+</body>
+
+</html>

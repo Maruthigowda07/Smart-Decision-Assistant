@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laptop Decision - Smart Decision Assistant</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>
+                Smart Decision Assistant
+            </h1>
+
+            <p>
+                Find the right laptop for your needs
+            </p>
+
+        </div>
+
+
+        <div class="assistant">
+
+            <button
+                type="button"
+                id="assistantButton"
+            >
+                Smart Assistant
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ============================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================= -->
+
+    <main>
+
+        <section class="laptop-section">
+
+
+            <h2>
+                Find Your Perfect Laptop
+            </h2>
+
+
+            <p>
+                Enter your requirements and view a suitable
+                laptop recommendation.
+            </p>
+
+
+
+            <!-- ============================= -->
+            <!-- LAPTOP FORM -->
+            <!-- ============================= -->
+
+            <div class="laptop-form">
+
+
+                <!-- Budget -->
+
+                <label for="budget">
+                    Your Budget
+                </label>
+
+
+                <input
+                    type="number"
+                    id="budget"
+                    placeholder="Enter your budget"
+                    min="1"
+                >
+
+
+
+                <!-- RAM -->
+
+                <label for="ram">
+                    Required RAM
+                </label>
+
+
+                <select id="ram">
+
+                    <option value="">
+                        Select RAM
+                    </option>
+
+                    <option value="8">
+                        8 GB
+                    </option>
+
+                    <option value="16">
+                        16 GB
+                    </option>
+
+                    <option value="32">
+                        32 GB
+                    </option>
+
+                </select>
+
+
+
+                <!-- Performance -->
+
+                <label for="performance">
+                    Performance Level
+                </label>
+
+
+                <select id="performance">
+
+                    <option value="">
+                        Select Performance
+                    </option>
+
+                    <option value="6">
+                        Basic
+                    </option>
+
+                    <option value="7">
+                        Good
+                    </option>
+
+                    <option value="8">
+                        High
+                    </option>
+
+                    <option value="9">
+                        Very High
+                    </option>
+
+                </select>
+
+
+
+                <!-- Recommendation Button -->
+
+                <button
+                    type="button"
+                    class="recommend-btn"
+                >
+                    Get Recommendation
+                </button>
+
+
+            </div>
+
+
+
+            <!-- ============================= -->
+            <!-- RECOMMENDATION RESULT -->
+            <!-- ============================= -->
+
+            <div class="result">
+
+
+                <h2>
+                    Recommended Laptop
+                </h2>
+
+
+                <div class="result-details">
+
+                    <p>
+                        Enter your requirements above
+                        and click
+                        <strong>
+                            Get Recommendation
+                        </strong>
+                        to see the result.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ============================= -->
+            <!-- BACK HOME -->
+            <!-- ============================= -->
+
+            <div class="back-home">
+
+                <a href="index.html">
+
+                    <button type="button">
+                        Back to Home
+                    </button>
+
+                </a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Smart Decision Assistant
+        </p>
+
+    </footer>
+
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script src="../JS/script.js"></script>
+
+
+</body>
+
+</html>
