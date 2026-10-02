@@ -8,43 +8,60 @@
    PAGE DETECTION
    ========================================================= */
 
-const currentPage = window.location.pathname.toLowerCase();
+const currentPage =
+    window.location.pathname.toLowerCase();
 
 
 /* =========================================================
    SMART ASSISTANT BUTTON
    ========================================================= */
 
-const assistantButton = document.querySelector("#assistantButton");
+const assistantButton =
+    document.querySelector("#assistantButton");
+
 
 if (assistantButton) {
 
-    assistantButton.addEventListener("click", function () {
+    assistantButton.addEventListener(
+        "click",
+        function () {
 
-        const isHomePage =
-            currentPage.includes("index.html") ||
-            currentPage.endsWith("/");
+            const isHomePage =
+                currentPage.includes("index.html") ||
+                currentPage.endsWith("/");
 
-        if (isHomePage) {
 
-            const searchInput =
-                document.querySelector("#searchInput");
+            if (isHomePage) {
 
-            if (searchInput) {
+                const searchInput =
+                    document.querySelector("#searchInput");
 
-                searchInput.focus();
 
-                searchInput.placeholder =
-                    "Try: laptop, mobile, career or travel";
+                if (searchInput) {
+
+                    searchInput.focus();
+
+                    searchInput.placeholder =
+                        "Try: laptop, mobile, career or travel";
+
+                }
+
             }
 
-        } else {
+            else {
 
-            window.location.href = "index.html";
+                /*
+                 * Category pages are inside HTML folder.
+                 * Home page is in project root.
+                 */
+
+                window.location.href =
+                    "../index.html";
+
+            }
 
         }
-
-    });
+    );
 
 }
 
@@ -56,8 +73,10 @@ if (assistantButton) {
 const searchButton =
     document.querySelector("#searchButton");
 
+
 const searchInput =
     document.querySelector("#searchInput");
+
 
 const searchResult =
     document.querySelector("#searchResult");
@@ -99,7 +118,9 @@ function performSearch() {
             .toLowerCase();
 
 
-    /* Empty search */
+    /* =====================================================
+       EMPTY SEARCH
+       ===================================================== */
 
     if (value === "") {
 
@@ -135,11 +156,14 @@ function performSearch() {
             "Laptop selected. Opening Laptop Decision Assistant..."
         );
 
+
         setTimeout(function () {
 
-            window.location.href = "laptop.html";
+            window.location.href =
+                "HTML/laptop.html";
 
         }, 700);
+
 
         return;
 
@@ -169,11 +193,14 @@ function performSearch() {
             "Mobile selected. Opening Mobile Decision Assistant..."
         );
 
+
         setTimeout(function () {
 
-            window.location.href = "mobile.html";
+            window.location.href =
+                "HTML/mobile.html";
 
         }, 700);
+
 
         return;
 
@@ -203,11 +230,19 @@ function performSearch() {
             "Career selected. Opening Career Decision Assistant..."
         );
 
+
         setTimeout(function () {
 
-            window.location.href = "career.html";
+            /*
+             * Actual GitHub filename:
+             * HTML/Career.html
+             */
+
+            window.location.href =
+                "HTML/Career.html";
 
         }, 700);
+
 
         return;
 
@@ -238,11 +273,19 @@ function performSearch() {
             "Travel selected. Opening Travel Decision Assistant..."
         );
 
+
         setTimeout(function () {
 
-            window.location.href = "travel.html";
+            /*
+             * Actual GitHub filename:
+             * HTML/Travel.html
+             */
+
+            window.location.href =
+                "HTML/Travel.html";
 
         }, 700);
+
 
         return;
 
@@ -271,9 +314,12 @@ function showSearchMessage(message) {
     }
 
 
-    searchResult.style.display = "block";
+    searchResult.style.display =
+        "block";
 
-    searchResult.textContent = message;
+
+    searchResult.textContent =
+        message;
 
 }
 
@@ -340,10 +386,12 @@ function recommendLaptop() {
             document.querySelector("#budget")?.value
         );
 
+
     const ram =
         Number(
             document.querySelector("#ram")?.value
         );
+
 
     const performance =
         Number(
@@ -351,7 +399,11 @@ function recommendLaptop() {
         );
 
 
-    if (!budget || !ram || !performance) {
+    if (
+        !budget ||
+        !ram ||
+        !performance
+    ) {
 
         showFormMessage(
             "Please enter budget, RAM and performance."
@@ -447,7 +499,9 @@ function recommendLaptop() {
 
 
     const details =
-        document.querySelector(".result-details");
+        document.querySelector(
+            ".result-details"
+        );
 
 
     if (!details) {
@@ -503,15 +557,18 @@ function recommendMobile() {
             document.querySelector("#budget")?.value
         );
 
+
     const camera =
         Number(
             document.querySelector("#camera")?.value
         );
 
+
     const battery =
         Number(
             document.querySelector("#battery")?.value
         );
+
 
     const performance =
         Number(
@@ -627,7 +684,9 @@ function recommendMobile() {
 
 
     const details =
-        document.querySelector(".result-details");
+        document.querySelector(
+            ".result-details"
+        );
 
 
     if (!details) {
@@ -688,13 +747,17 @@ function recommendCareer() {
             document.querySelector("#demand")?.value
         );
 
+
     const difficulty =
         Number(
             document.querySelector("#difficulty")?.value
         );
 
 
-    if (!demand || !difficulty) {
+    if (
+        !demand ||
+        !difficulty
+    ) {
 
         showFormMessage(
             "Please select demand and difficulty."
@@ -786,7 +849,9 @@ function recommendCareer() {
 
 
     const details =
-        document.querySelector(".result-details");
+        document.querySelector(
+            ".result-details"
+        );
 
 
     if (!details) {
@@ -847,10 +912,12 @@ function recommendTravel() {
             document.querySelector("#budget")?.value
         );
 
+
     const adventure =
         Number(
             document.querySelector("#adventure")?.value
         );
+
 
     const relaxation =
         Number(
@@ -963,7 +1030,9 @@ function recommendTravel() {
 
 
     const details =
-        document.querySelector(".result-details");
+        document.querySelector(
+            ".result-details"
+        );
 
 
     if (!details) {
@@ -1023,17 +1092,21 @@ function getLevel(value) {
         return "Basic";
     }
 
+
     if (value === 7) {
         return "Good";
     }
+
 
     if (value === 8) {
         return "High";
     }
 
+
     if (value === 9) {
         return "Very High";
     }
+
 
     return "Excellent";
 
@@ -1047,7 +1120,9 @@ function getLevel(value) {
 function updateResultHeading(text) {
 
     const heading =
-        document.querySelector(".result h2");
+        document.querySelector(
+            ".result h2"
+        );
 
 
     if (heading) {
@@ -1058,7 +1133,9 @@ function updateResultHeading(text) {
 
 
     const result =
-        document.querySelector(".result");
+        document.querySelector(
+            ".result"
+        );
 
 
     if (result) {
@@ -1083,7 +1160,9 @@ function updateResultHeading(text) {
 function showFormMessage(message) {
 
     let messageBox =
-        document.querySelector(".form-message");
+        document.querySelector(
+            ".form-message"
+        );
 
 
     if (!messageBox) {
@@ -1091,24 +1170,30 @@ function showFormMessage(message) {
         messageBox =
             document.createElement("p");
 
+
         messageBox.className =
             "form-message";
 
 
         const form =
-            document.querySelector(".laptop-form");
+            document.querySelector(
+                ".laptop-form"
+            );
 
 
         if (form) {
 
-            form.appendChild(messageBox);
+            form.appendChild(
+                messageBox
+            );
 
         }
 
     }
 
 
-    messageBox.textContent = message;
+    messageBox.textContent =
+        message;
 
 }
 
@@ -1120,7 +1205,9 @@ function showFormMessage(message) {
 function showResultMessage(message) {
 
     const details =
-        document.querySelector(".result-details");
+        document.querySelector(
+            ".result-details"
+        );
 
 
     if (!details) {
@@ -1151,7 +1238,9 @@ function showResultMessage(message) {
 function removeFormMessage() {
 
     const message =
-        document.querySelector(".form-message");
+        document.querySelector(
+            ".form-message"
+        );
 
 
     if (message) {
@@ -1179,6 +1268,7 @@ formInputs.forEach(function (input) {
         "change",
         removeFormMessage
     );
+
 
     input.addEventListener(
         "input",
